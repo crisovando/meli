@@ -1,0 +1,34 @@
+.searchbox {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+
+  @media (min-width: 430px) {
+    width: 75%;
+  }
+
+  .logo {
+    width: 70px;
+    height: auto;
+  }
+
+  & input[type='text'] {
+    flex: 1 1 auto;
+    border: 1px solid #e1e1e1;
+    color: black;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    padding: 7px 20px;
+    outline: none;
+  }
+
+  & button {
+    background-color: #efefef;
+    color: #000;
+    width: 40px;
+    margin-left: -5px;
+    border: 1px solid #e1e1e1;
+    border-left: none;
+  }
+}

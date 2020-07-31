@@ -1,0 +1,35 @@
+.grid {
+  display: grid;
+  grid-template-columns: 100%;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+
+  & > img {
+    justify-self: center;
+    max-width: 100%;
+  }
+
+  .condition {
+    font-size: 0.9em;
+    color: gray;
+  }
+
+  .title {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  .price {
+    font-size: 29px;
+    .decimals {
+      font-size: 19px;
+      position: relative;
+      top: -7px;
+    }
+  }
+
+  @media (min-width: 760px) {
+    grid-template-columns: 70% 30%;
+  }
+}

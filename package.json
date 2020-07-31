@@ -1,15 +1,24 @@
 {
   "name": "api-routes-rest",
   "version": "1.0.0",
+  "author": {
+    "name": "Cristian Ovando",
+    "email": "cristian.f.ovando@gmail.com"
+  },
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "express": "^4.17.1",
     "next": "latest",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "sass": "^1.26.10",
     "swr": "^0.1.18"
   },
   "license": "ISC"

@@ -1,0 +1,44 @@
+.list {
+  padding: 0 7px;
+  display: grid;
+  grid-row-gap: 1px;
+  .item {
+    display: grid;
+    grid-template-columns: minmax(100px, 180px) 1fr;
+    gap: 15px;
+    padding: 1em 0.7em;
+    background-color: white;
+    cursor: pointer;
+
+    & > div:nth-child(3) {
+      display: none;
+    }
+
+    .pricetitle {
+      padding: 1.5em 0;
+
+      .price {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .state {
+      padding: 1.5em 0;
+    }
+  }
+
+  @media (min-width: 480px) {
+    .item {
+      grid-template-columns: 180px 1fr 150px;
+
+      & > div:nth-child(3) {
+        display: block;
+      }
+    }
+  }
+}
