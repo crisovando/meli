@@ -26,7 +26,7 @@ export default () => {
 
   return (
     <form onSubmit={handleSubmit} className={styles.searchbox}>
-      <img src="/img/logo.png" className={styles.logo} />
+      <img src="/img/Logo_ML.png" className={styles.logo} />
       <input type="text" id="text" value={search} onChange={handleChange} />
       <button type="submit">
         <FontAwesomeIcon icon={faSearch} size="1x" />
